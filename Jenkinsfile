@@ -84,7 +84,7 @@ node {
                 permset = bat returnStdout: true, script: "sfdx force:user:permset:assign -n yeurdreamin -u ci-cd-org"
             }*/
             println(sourcepush)
-            if(isUnix()){
+            /*if(isUnix()){
                 println('Checking Deployment Status');
                 statusDep = sh returnStdout: true, script: "${toolbelt}/sfdx force:mdapi:deploy:report -u ${HUB_ORG} --json"
             }else{
@@ -111,7 +111,7 @@ node {
             }
             println('Updated Deployment Status')
             println(statusDep1)
-            
+            */
             /*def jsonSlurper = new JsonSlurperClassic()
             def robj = jsonSlurper.parseText(statusDep.toString())
             println('rObj');
